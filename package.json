@@ -1,0 +1,11 @@
+{
+  "name": "abhinaya-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for Abhinaya",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo 'No server needed'"
+  },
+  "author": "Abhinaya Yarramreddy",
+  "license": "MIT"
+}

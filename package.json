@@ -1,11 +1,10 @@
 {
   "name": "abhinaya-portfolio",
   "version": "1.0.0",
-  "description": "Portfolio website for Abhinaya",
-  "main": "index.html",
+  "description": "Personal Portfolio Website for Abhinaya Yarramreddy",
   "scripts": {
-    "start": "echo 'No server needed'"
+    "start": "echo 'No build needed for static site'"
   },
   "author": "Abhinaya Yarramreddy",
-  "license": "MIT"
+  "license": "ISC"
 }

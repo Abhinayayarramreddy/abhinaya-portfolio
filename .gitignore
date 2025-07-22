@@ -1,0 +1,21 @@
+# Node modules (if you ever add npm packages)
+node_modules/
+
+# Logs
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Vercel or build cache
+.vercel/
+dist/
+build/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Environment files (if any)
+.env

@@ -1,21 +1,31 @@
-// Toggle functionality for responsive nav menu (if needed in future)
-document.addEventListener('DOMContentLoaded', () => {
-  const menuToggle = document.querySelector('.menu-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  }
-
-  // Contact form submission alert
-  const contactForm = document.getElementById('contact-form');
-  if (contactForm) {
-    contactForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      alert('Message sent successfully!');
-      contactForm.reset();
-    });
-  }
+// Smooth scrolling for navigation links
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
 });
+
+// Optional: Highlight active nav link on scroll
+window.addEventListener('scroll', () => {
+  const sections = document.querySelectorAll('section');
+  let scrollPos = window.scrollY || window.pageYOffset;
+
+  sections.forEach(section => {
+    const top = section.offsetTop - 100;
+    const bottom = top + section.offsetHeight;
+    const id = section.getAttribute('id');
+    const navLink = document.querySelector(`nav a[href="#${id}"]`);
+    
+    if (scrollPos >= top && scrollPos < bottom) {
+      navLink.classList.add('active');
+    } else {
+      navLink.classList.remove('active');
+    }
+  });
+});
+

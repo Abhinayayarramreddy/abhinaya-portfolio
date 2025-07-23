@@ -1,181 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Abhinaya | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhinaya Yarramreddy | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script defer src="script.js"></script>
 </head>
+
 <body>
-
-  <!-- Social Links -->
-  <div style="display: flex; justify-content: flex-end; gap: 15px; margin: 20px 40px 0 0;">
-    <a href="https://www.linkedin.com/in/abhinaya-yarramreddy" target="_blank" title="LinkedIn">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" style="width: 30px; height: 30px;">
-    </a>
-    <a href="https://github.com/Abhinayayarramreddy" target="_blank" title="GitHub">
-      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" style="width: 30px; height: 30px;">
-    </a>
-  </div>
-
   <div class="container">
-    <section id="about">
-      <div class="profile-pic">
-        <img src="profile.jpg" alt="Abhinaya Yarramreddy" />
+    <header class="sidebar">
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+      <h1>Abhinaya Yarramreddy</h1>
+      <p class="tagline">Aspiring Data Analyst</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/abhinaya-yarramreddy" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Abhinayayarramreddy" target="_blank">GitHub</a>
       </div>
-      <div class="about-content">
-        <h1>Abhinaya Yarramreddy</h1>
-        <h2>Aspiring Data Analyst</h2>
+      <a href="#" class="btn">View Resume</a>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section id="about">
+        <h2>About Me</h2>
         <p>Aspiring Data Analyst who loves working with data, extracting meaningful insights, and building responsive dashboards.</p>
-        <button onclick="window.open('resume.pdf')">View Resume</button>
+
+        <div class="education-timeline">
+          <div class="edu-item">🧑‍🎓 B.Tech (AI & DS), VVIT, 2022–2026</div>
+          <div class="line"></div>
+          <div class="edu-item">🏢 Intermediate, Sri Chaitanya</div>
+          <div class="line"></div>
+          <div class="edu-item">🏠 School, Oxford IIT Foundation</div>
+        </div>
 
         <div class="hobbies">
           <h3>Hobbies</h3>
           <ul>
-            <li>🎵 Listening to music</li>
-            <li>💡 Exploring emerging technologies</li>
-            <li>📖 Reading books</li>
+            <li>🎧 Listening to music</li>
+            <li>🔍 Exploring emerging technologies</li>
+            <li>📚 Reading books</li>
           </ul>
         </div>
+      </section>
 
-        <div class="education">
-          <h3>Education</h3>
-          <div class="timeline">
-            <div class="timeline-item">🧑‍🎓 B.Tech (AI & DS), VVIT, 2022–2026</div>
-            <div class="timeline-line"></div>
-            <div class="timeline-item">🏢 Intermediate, Sri Chaitanya</div>
-            <div class="timeline-line"></div>
-            <div class="timeline-item">🏠 School, Oxford IIT Foundation</div>
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-section">
+          <div class="skill-box">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li><strong>Programming Languages:</strong> C, Python, R</li>
+              <li><strong>Web Technologies:</strong> HTML, CSS</li>
+              <li><strong>Databases:</strong> MySQL, Database Design</li>
+              <li><strong>Tools:</strong> Excel, Power BI, Tableau, Git, GitHub, VS Code</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Communication Skills</li>
+              <li>Team Management</li>
+              <li>Analytical Skills</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="skills-box">
-        <div class="skill-category">
-          <h3>Technical Skills</h3>
-          <div class="skills-row">
-            <div class="skill-box">
-              <h4>Programming</h4>
-              <ul>
-                <li>C</li>
-                <li>Python</li>
-                <li>R</li>
-              </ul>
-            </div>
-            <div class="skill-box">
-              <h4>Web Technologies</h4>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div class="skill-box">
-              <h4>Databases</h4>
-              <ul>
-                <li>MySQL</li>
-                <li>Database Design</li>
-              </ul>
-            </div>
-            <div class="skill-box">
-              <h4>Tools</h4>
-              <ul>
-                <li>Excel</li>
-                <li>Power BI</li>
-                <li>Tableau</li>
-                <li>Git & GitHub</li>
-                <li>VS Code</li>
-              </ul>
-            </div>
+      <section id="certifications">
+        <h2>Certifications</h2>
+        <div class="cert-grid">
+          <div class="cert-card">
+            <h3>Data Analysis with Python</h3>
+            <p><strong>Issuer:</strong> IBM SkillsBuild</p>
+            <a href="https://drive.google.com/file/d/1Yu8kh6MocACp-hqC5aAqnzhFLOpR9Rvh/view?usp=drive_link" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <h3>Introduction to Excel</h3>
+            <p><strong>Issuer:</strong> Simplilearn</p>
+            <a href="https://drive.google.com/file/d/1CpKUad_3wHjRk6lcuUsC21BjWYY00Yj1/view?usp=drive_link" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <h3>Prompt Engineering</h3>
+            <p><strong>Issuer:</strong> Great Learning</p>
+            <a href="https://drive.google.com/file/d/1-VHISeQI-hG2DFN43yEaZ4kTV4cQ_uNu/view?usp=drive_link" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <h3>Cloud Computing</h3>
+            <p><strong>Issuer:</strong> NPTEL</p>
+            <a href="https://drive.google.com/file/d/1eg5b6yTSLD_UqleIcYuXX5RJ-RicQVzP/view?usp=drive_link" target="_blank">View Certificate</a>
+          </div>
+          <div class="cert-card">
+            <h3>Programming in Java</h3>
+            <p><strong>Issuer:</strong> NPTEL</p>
+            <a href="https://drive.google.com/file/d/1MPj3dX65PYOcB6lKPImXnaEyMtJVnwV9/view?usp=drive_link" target="_blank">View Certificate</a>
           </div>
         </div>
+      </section>
 
-        <div class="skill-category">
-          <h3>Soft Skills</h3>
-          <div class="skills-row">
-            <div class="skill-box">
-              <ul>
-                <li>Communication Skills</li>
-                <li>Team Management</li>
-                <li>Analytical Skills</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="certifications">
-      <h2>Certifications</h2>
-      <div class="certification-cards">
-        <div class="cert-card">
-          <h4>Data Analysis with Python</h4>
-          <p>Issuer: IBM SkillsBuild</p>
-          <a href="https://drive.google.com/file/d/1Yu8kh6MocACp-hqC5aAqnzhFLOpR9Rvh/view?usp=drive_link" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-          <h4>Introduction to Excel</h4>
-          <p>Issuer: Simplilearn</p>
-          <a href="https://drive.google.com/file/d/1CpKUad_3wHjRk6lcuUsC21BjWYY00Yj1/view?usp=drive_link" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-          <h4>Prompt Engineering</h4>
-          <p>Issuer: Great Learning</p>
-          <a href="https://drive.google.com/file/d/1-VHISeQI-hG2DFN43yEaZ4kTV4cQ_uNu/view?usp=drive_link" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-          <h4>Cloud Computing</h4>
-          <p>Issuer: NPTEL</p>
-          <a href="https://drive.google.com/file/d/1eg5b6yTSLD_UqleIcYuXX5RJ-RicQVzP/view?usp=drive_link" target="_blank">View Certificate</a>
-        </div>
-        <div class="cert-card">
-          <h4>Programming in Java</h4>
-          <p>Issuer: NPTEL</p>
-          <a href="https://drive.google.com/file/d/1MPj3dX65PYOcB6lKPImXnaEyMtJVnwV9/view?usp=drive_link" target="_blank">View Certificate</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-cards">
+      <section id="projects">
+        <h2>Projects</h2>
         <div class="project-card">
           <h3>Recruitment Bot</h3>
-          <p>An AI-powered virtual interviewer that adapts questions based on job descriptions and candidate responses using the Gemini API.</p>
+          <p>An AI-powered virtual interviewer that dynamically generates questions using Gemini API based on job descriptions and adapts to candidate responses.</p>
           <p><strong>Tech Stack:</strong> ReactJS, Tailwind CSS, MongoDB</p>
         </div>
         <div class="project-card">
           <h3>Alumni Interaction Platform</h3>
-          <p>A dynamic web app connecting students and alumni with interactive Q&A and chat features for better networking and guidance.</p>
-          <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript, Node.js</p>
+          <p>A platform for connecting alumni and students, built with a clean frontend and dynamic Node.js backend.</p>
+          <p><strong>Tech Stack:</strong> HTML, CSS, JS, Node.js</p>
         </div>
         <div class="project-card">
           <h3>Monthly Sales Dashboard</h3>
-          <p>Interactive Power BI dashboard for monthly sales insights, KPI tracking, time-series trends, and data storytelling for decisions.</p>
-          <p><strong>Tech Stack:</strong> Power BI, DAX, Data Modeling</p>
+          <p>An interactive dashboard in Power BI showcasing monthly sales insights, KPIs, and time-series trends with advanced DAX and modeling.</p>
+          <p><strong>Tech Stack:</strong> Power BI</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="contact">
-      <h2>Get in Touch</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p><strong>Email:</strong> abhinayayarramreddy@gmail.com</p>
-        </div>
-        <form class="contact-form">
-          <input type="text" placeholder="Name" required />
-          <input type="email" placeholder="Email" required />
-          <textarea placeholder="Message" required></textarea>
+      <section id="contact">
+        <h2>Get in Touch</h2>
+        <p>Email: <a href="mailto:abhinayayarramreddy@gmail.com">abhinayayarramreddy@gmail.com</a></p>
+        <form>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" placeholder="Your Message" required></textarea>
           <button type="submit">Send Message</button>
         </form>
-      </div>
-    </section>
+      </section>
+    </main>
   </div>
-
-  <script src="script.js"></script>
 </body>
+
 </html>
+

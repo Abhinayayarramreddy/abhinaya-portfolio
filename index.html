@@ -3,157 +3,299 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abhinaya Yarramreddy | Aspiring Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abhinaya Yarramreddy | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <script defer src="script.js"></script>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#certifications">Certifications</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <section id="about" class="two-column">
-    <div class="profile-image">
-      <img src="profile.jpg" alt="Abhinaya Yarramreddy" />
-    </div>
-    <div class="about-text">
-      <h1>Abhinaya Yarramreddy</h1>
-      <p class="tagline">Aspiring Data Analyst</p>
-      <a href="#" class="btn">View Resume</a>
-      <p class="description">
-        Aspiring Data Analyst who loves working with data, extracting meaningful insights, and building responsive dashboards.
-      </p>
-
-      <div class="education">
-        <h2>Education</h2>
-        <ul class="timeline">
-          <li>
-            <span class="icon">🧑‍🎓</span>
-            <div class="timeline-content">
-              <h3>B.Tech in AI & DS (2022–2026)</h3>
-              <p>Vasireddy Venkatadri Institute of Technology<br />CGPA: 8.9</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon">🏢</span>
-            <div class="timeline-content">
-              <h3>Intermediate (2020–2022)</h3>
-              <p>Sri Chaitanya Junior College<br />Percentage: 97%</p>
-            </div>
-          </li>
-          <li>
-            <span class="icon">🏠</span>
-            <div class="timeline-content">
-              <h3>School (2020)</h3>
-              <p>Oxford IIT Foundation<br />GPA: 10.0</p>
-            </div>
-          </li>
-        </ul>
+  <div class="container">
+    <!-- PROFILE / NAVBAR -->
+    <header class="header">
+      <div class="header-left">
+        <h1 class="site-title">Abhinaya  </h1>
       </div>
+      <nav class="header-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#certifications" class="nav-link">Certifications</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </header>
 
-      <div class="hobbies">
-        <h2>Hobbies</h2>
-        <div class="hobby-list">
-          <div class="hobby-item">🎧 Listening to music</div>
-          <div class="hobby-item">💡 Exploring emerging technologies</div>
-          <div class="hobby-item">📚 Reading books</div>
+    <!-- HOME / PROFILE SECTION -->
+    <section id="home" class="home-section">
+      <div class="home-left">
+        <h2 class="home-name">Abhinaya Yarramreddy</h2>
+        <p class="home-tagline">Aspiring Data Analyst</p>
+
+        <div class="home-links-resume">
+          <div class="home-links">
+            <a href="https://www.linkedin.com/in/abhinaya-yarramreddy" target="_blank" class="social-link">LinkedIn</a>
+            <a href="https://github.com/Abhinayayarramreddy" target="_blank" class="social-link">GitHub</a>
+          </div>
+          <a href="https://drive.google.com/file/d/1uFDaM-sVCdrD0Z0HTphWfQ7ssmHw3agW/view?usp=drive_link" target="_blank" class="resume-btn">View Resume</a>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-category">
-      <h3>Technical Skills</h3>
-      <div class="skills-list">
-        <div class="skill-box">C</div>
-        <div class="skill-box">Python</div>
-        <div class="skill-box">R</div>
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">MySQL</div>
-        <div class="skill-box">Database Design</div>
-        <div class="skill-box">Excel</div>
-        <div class="skill-box">Power BI</div>
-        <div class="skill-box">Tableau</div>
-        <div class="skill-box">Git</div>
-        <div class="skill-box">GitHub</div>
-        <div class="skill-box">VS Code</div>
+      <div class="home-right">
+        <img src="profile.jpg" alt="Abhinaya Yarramreddy" class="profile-pic" />
       </div>
-    </div>
-    <div class="skills-category">
-      <h3>Soft Skills</h3>
-      <div class="skills-list">
-        <div class="skill-box">Communication Skills</div>
-        <div class="skill-box">Team Management</div>
-        <div class="skill-box">Analytical Skills</div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="certifications">
-    <h2>Certifications</h2>
-    <div class="certification-grid">
-      <div class="cert-box">
-        <h4>Data Analysis with Python</h4>
-        <p>IBM SkillsBuild</p>
-        <a href="https://drive.google.com/file/d/1Yu8kh6MocACp-hqC5aAqnzhFLOpR9Rvh/view" target="_blank">View Certificate</a>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section">
+      <div class="about-left">
+        <h2>About Me</h2>
+        <p>
+           Aspiring Data Analyst passionate about transforming raw data into actionable insights.<br>
+            I enjoy exploring trends, building interactive dashboards, 
+           and presenting data in meaningful ways. With a strong foundation in tools like Excel, Power BI, and Python,
+            I'm eager to solve real-world problems through data.
+        </p>
+        <div class="hobbies-box">
+          <h3>Hobbies & Interests</h3>
+          <div class="hobbies-list">
+            <div class="hobby-item">
+              <div class="hobby-icon">🎧</div>
+              <p>Listening to music</p>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon">🔍</div>
+              <p>Exploring emerging technologies</p>
+            </div>
+            <div class="hobby-item">
+              <div class="hobby-icon">📚</div>
+              <p>Reading books</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="cert-box">
-        <h4>Introduction to Excel</h4>
-        <p>Simplilearn</p>
-        <a href="https://drive.google.com/file/d/1CpKUad_3wHjRk6lcuUsC21BjWYY00Yj1/view" target="_blank">View Certificate</a>
-      </div>
-      <div class="cert-box">
-        <h4>Prompt Engineering</h4>
-        <p>Great Learning</p>
-        <a href="https://drive.google.com/file/d/1-VHISeQI-hG2DFN43yEaZ4kTV4cQ_uNu/view" target="_blank">View Certificate</a>
-      </div>
-      <div class="cert-box">
-        <h4>Cloud Computing</h4>
-        <p>NPTEL</p>
-        <a href="https://drive.google.com/file/d/1eg5b6yTSLD_UqleIcYuXX5RJ-RicQVzP/view" target="_blank">View Certificate</a>
-      </div>
-      <div class="cert-box">
-        <h4>Programming in Java</h4>
-        <p>NPTEL</p>
-        <a href="https://drive.google.com/file/d/1MPj3dX65PYOcB6lKPImXnaEyMtJVnwV9/view" target="_blank">View Certificate</a>
+
+      <div class="about-right">
+        <section id="education" class="section">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+
+    <div class="timeline-item">
+      <div class="timeline-icon">🎓</div>
+      <div class="timeline-content">
+        <h3>B.Tech in AI & DS <span>2022 – 2026</span></h3>
+        <p>Vasireddy Venkatadri Institute of Technology (VVIT)</p>
+        <p>CGPA – 8.9</p>
       </div>
     </div>
-  </section>
 
-  <section id="contact">
-    <h2>Get in Touch</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p><strong>Email:</strong> abhinayayarramreddy@gmail.com</p>
-        <p><strong>LinkedIn:</strong> <a href="#">linkedin.com/in/abhinaya</a></p>
-        <p><strong>GitHub:</strong> <a href="#">github.com/abhinaya</a></p>
+    <div class="timeline-item">
+      <div class="timeline-icon">🏢</div>
+      <div class="timeline-content">
+        <h3>Intermediate <span>2020 – 2022</span></h3>
+        <p>Sri Chaitanya Junior College</p>
+        <p>Percent – 97%</p>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
     </div>
-  </section>
 
-  <footer>
-    <p>&copy; 2025 Abhinaya Yarramreddy. All rights reserved.</p>
-  </footer>
-</body>
+    <div class="timeline-item">
+      <div class="timeline-icon">🏠</div>
+      <div class="timeline-content">
+        <h3>School <span>2020</span></h3>
+        <p>Oxford IIT Foundation School</p>
+        <p>GPA – 10.0</p>
+      </div>
+    </div>
 
-</html>
+  </div>
+</section>
+
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+
+      <div class="technical-skills">
+        <h3>Technical Skills</h3>
+        <div class="tech-row">
+          <div class="skill-box">
+            <h4>Programming Languages</h4>
+            <ul>
+              <li><span class="icon">💻</span> C</li>
+              <li><span class="icon">🐍</span> Python</li>
+              <li><span class="icon">📊</span> R</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h4>Web Technologies</h4>
+            <ul>
+              <li><span class="icon">🌐</span> HTML</li>
+              <li><span class="icon">🎨</span> CSS</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tech-row">
+          <div class="skill-box">
+            <h4>Databases</h4>
+            <ul>
+              <li><span class="icon">🗄️</span> MySQL</li>
+              <li><span class="icon">📁</span> Database Design</li>
+            </ul>
+          </div>
+          <div class="skill-box">
+            <h4>Tools</h4>
+            <ul>
+              <li><span class="icon">📊</span> Excel</li>
+              <li><span class="icon">📈</span> Power BI</li>
+              <li><span class="icon">📉</span> Tableau</li>
+              <li><span class="icon">🐙</span> Git</li>
+              <li><span class="icon">🐙</span> GitHub</li>
+              <li><span class="icon">💻</span> VS Code</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="soft-skills">
+  <h3>Soft Skills</h3>
+  <div class="skill-box soft-box">
+    <ul>
+      <li><span class="icon">🗣️</span> Communication Skills</li>
+      <li><span class="icon">👥</span> Team Management</li> <!-- Changed -->
+      <li><span class="icon">📊</span> Analytical Skills</li>
+      <li><span class="icon">🚀</span> Leadership Qualities</li> <!-- Changed -->
+    </ul>
+  </div>
+</div>
+
+    </section>
+
+    <!-- CERTIFICATIONS SECTION -->
+    <section id="certifications" class="certifications-section">
+      <h2>Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <h3>Data Analysis with Python</h3>
+          <p><strong>Issued By:</strong> IBM SkillsBuild</p>
+          <p><strong>Status:</strong> Completed</p>
+          <a href="https://drive.google.com/file/d/1Yu8kh6MocACp-hqC5aAqnzhFLOpR9Rvh/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <h3>Introduction to Excel</h3>
+          <p><strong>Issued By:</strong> Simplilearn</p>
+           <p><strong>Status:</strong> Completed</p>
+          <a href="https://drive.google.com/file/d/1CpKUad_3wHjRk6lcuUsC21BjWYY00Yj1/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <h3>Prompt Engineering</h3>
+          <p><strong>Issued By:</strong> Great Learning</p>
+           <p><strong>Status:</strong> Completed</p>
+          <a href="https://drive.google.com/file/d/1-VHISeQI-hG2DFN43yEaZ4kTV4cQ_uNu/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <h3>Cloud Computing</h3>
+          <p><strong>Issued By:</strong> NPTEL</p>
+           <p><strong>Score:</strong> 71%</p>
+          <a href="https://drive.google.com/file/d/1eg5b6yTSLD_UqleIcYuXX5RJ-RicQVzP/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+        <div class="cert-card">
+          <h3>Programming in Java</h3>
+          <p><strong>Issued By:</strong> NPTEL</p>
+           <p><strong>Score:</strong> 56%</p>
+          <a href="https://drive.google.com/file/d/1MPj3dX65PYOcB6lKPImXnaEyMtJVnwV9/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+         <div class="cert-card">
+          <h3>PowerBI for Beginners</h3>
+          <p><strong>Issued By:</strong> Simplilearn</p>
+          <p><strong>Status:</strong> Completed</p>
+          <a href="https://drive.google.com/file/d/1eU5mGAFSLhvXBbsO--ib0ECm2m5ucKwz/view?usp=drive_link" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Recruitment Bot</h3>
+        <p>An AI-powered virtual interviewer that dynamically generates questions using Gemini API based on job descriptions and adapts to candidate responses.</p>
+        <p>Developed a responsive dashboard showing interview scores, AI-generated feedback, and areas for improvement.</p>
+        <a href="https://github.com/Abhinayayarramreddy/recruitment-bot" target="_blank">Github</a>
+        <p><strong>Tech Stack:</strong> Mongodb,Tailwind CSS, Gemini API</p>
+      </div>
+      <div class="project-card">
+        <h3>Alumni Interaction Platform</h3>
+        <p>A platform for connecting alumni and students, built with a clean frontend and dynamic Node.js backend.</p>
+        <p>Implemented role-based access and dynamic content rendering to personalize user experience for students and alumni.</p>
+        <a href="https://github.com/Abhinayayarramreddy/Alumni-Platform.git" target="_blank">Github</a>
+        <p><strong>Tech Stack:</strong> React.JS, Express.JS, Tailwind CSS</p>
+      </div>
+      <div class="project-card">
+        <h3>Monthly Sales Dashboard</h3>
+        <p>The Power BI Monthly Sales Report provides a dynamic view of key sales metrics, including total revenue, product performance, and regional insights.</p>
+        <p>Interactive dashboards help track trends and compare monthly progress for data-driven decisions.</p>
+        <a href="https://github.com/Abhinayayarramreddy/Monthly-sales" target="_blank">Github</a>
+        <p><strong>Tech Stack:</strong> Power BI, DAX, Excel</p>      
+      </div>
+    </section>
+
+   <section class="experience" id="experience">
+  <h2 class="section-title">Experience</h2>
+  
+  <div class="experience-container">
+    
+    <div class="experience-details">
+      <div class="timeline">2024 – Present</div>
+      <div class="location">
+        <i class="fas fa-map-marker-alt"></i> VVIT
+      </div>
+    </div>
+
+    <div class="experience-content">
+      <div class="experience-role">TPC Coordinator</div>
+      <div class="experience-org">Student Activity Council (SAC)</div>
+      <p class="exp-desc">
+        Coordinating training and placement activities for the AI&DS department.<br>
+        Actively bridging students and the placement cell through SAC initiatives.<br>
+        Worked with professors and corporate recruiters to understand industry hiring trends and
+        student skill gaps. Assisted in organizing career workshops, mock interviews, and networking
+        events to prepare students for placements.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <h2 class="section-title">Let’s Connect?</h2>
+  <p class="section-description">Ready to collaborate? I'm always excited to work on new projects and opportunities.</p>  
+    <!-- Left Side: Contact Info -->
+    <div class="contact-info">
+      <div class="contact-box">
+        <p class="contact-label">Email:</p>
+        <a href="mailto:abhinayayarramreddy@gmail.com" target="_blank" class="contact-link">abhinayayarramreddy@gmail.com</a>
+      </div>
+      <div class="contact-box">
+        <p class="contact-label">GitHub:</p>
+        <a href="https://github.com/yourgithub" target="_blank" class="contact-link">github.com/yourgithub</a>
+      </div>
+      <div class="contact-box">
+        <p class="contact-label">LinkedIn:</p>
+        <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="contact-link">linkedin.com/in/yourlinkedin</a>
+      </div>
+    </div>
+
+    <!-- Right Side: Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>

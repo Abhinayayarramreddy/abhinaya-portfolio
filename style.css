@@ -664,9 +664,10 @@ a:hover {
     margin-top: 20px;
   }
 
+  @media (max-width: 768px) {
   .profile-pic {
-    max-width: 150px;
-    margin: 0 auto;
-    display: block;
+    width: 150px;
+    height: 150px;
+  }
   }
 }

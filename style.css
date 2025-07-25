@@ -631,3 +631,6 @@ a:hover {
 .contact-form button:hover {
   background-color: #16b5a2;
 }
+@media (max-width: 768px) {
+  /* All responsive styles go here */
+}

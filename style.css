@@ -631,28 +631,42 @@ a:hover {
 .contact-form button:hover {
   background-color: #16b5a2;
 }
+/* Desktop default layout */
+.home-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+
+.home-left {
+  width: 60%;
+}
+
+.home-right {
+  width: 40%;
+  text-align: right;
+}
+
+/* Mobile layout */
 @media (max-width: 768px) {
-  .about-section {
-    display: flex;
+  .home-section {
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
     text-align: center;
   }
 
-  .about-left, .about-right {
+  .home-left, .home-right {
     width: 100%;
   }
 
-  .about-photo {
+  .home-right {
+    order: 2; /* Image goes below text */
+    margin-top: 20px;
+  }
+
+  .profile-pic {
     max-width: 150px;
-    margin: 20px auto;
+    margin: 0 auto;
     display: block;
   }
-
-  .hobbies-list {
-    flex-direction: column;
-    gap: 10px;
-  }
-
- 
+}

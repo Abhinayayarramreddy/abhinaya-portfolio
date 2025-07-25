@@ -631,22 +631,28 @@ a:hover {
 .contact-form button:hover {
   background-color: #16b5a2;
 }
-
 @media (max-width: 768px) {
-  .main-container {
+  .about-section {
+    display: flex;
     flex-direction: column;
-    padding: 10px;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
   }
 
-  .left-column, .right-column {
+  .about-left, .about-right {
     width: 100%;
-    margin: 0;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .about-photo {
+    max-width: 150px;
+    margin: 20px auto;
+    display: block;
   }
 
-  /* Add more based on your layout */
-}
+  .hobbies-list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+ 
